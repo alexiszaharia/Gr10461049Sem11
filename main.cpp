@@ -75,7 +75,7 @@ void main() {
 	//----------------PERSOANA----------------
 	cout << "----------------PERSOANA----------------" << endl;
 
-	Persoana p1("Alexis Zaharia", 25);
+	Persoana p1("Alexis", 25);
 	Persoana p2("George", 23);
 	Persoana p3("Adina", 20);
 

@@ -67,9 +67,10 @@ ostream& operator<<(ostream& out, Persoana p)
 
 ifstream& operator>>(ifstream& in, Persoana& p)
 {
-	char buffer[50];
+	/*char buffer[50];
 	in.getline(buffer, 50);
-	p.nume = buffer;
+	p.nume = buffer;*/
+	in >> p.nume;
 	in >> p.varsta;
 
 	return in;
@@ -77,10 +78,10 @@ ifstream& operator>>(ifstream& in, Persoana& p)
 
 ofstream& operator<<(ofstream& out, Persoana p)
 {
-	const char* aux = p.nume.c_str();
+	//const char* aux = p.nume.c_str();
 	//out.write(aux, p.nume.length() + 1);
-	out.write(aux, strlen(aux) + 1);
-	out << endl;
+	//out.write(aux, strlen(aux) + 1);
+	out << p.nume << endl;
 	out << p.varsta << endl;
 
 	return out;
